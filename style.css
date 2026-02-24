@@ -1,0 +1,188 @@
+:root {
+    --primary-color: #C62828;
+    --text-dark: #333;
+    --text-light: #666;
+    --bg-light: #f8f9fa;
+    --white: #ffffff;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    background-color: var(--white);
+    color: var(--text-dark);
+}
+
+/* Navbar Styling */
+.navbar {
+    padding: 15px 5%;
+    border-bottom: 1px solid #eee;
+    background: var(--white);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.brand {
+    color: var(--primary-color);
+    font-weight: 800;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.main-nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: var(--text-dark);
+    font-size: 0.9rem;
+}
+
+.search-bar {
+    position: relative;
+    background: #f1f3f5;
+    border-radius: 20px;
+    padding: 5px 15px;
+}
+
+.search-bar input {
+    border: none;
+    background: transparent;
+    padding: 8px;
+    width: 200px;
+    outline: none;
+}
+
+.nav-icons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 1.2rem;
+    color: var(--text-dark);
+}
+
+.login-btn {
+    padding: 8px 20px;
+    border: 1px solid #ddd;
+    background: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h1 { font-size: 3.5rem; margin-bottom: 10px; }
+
+.shop-btn {
+    background: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+/* Product Cards */
+.container { padding: 50px 5%; }
+.section-title { font-size: 2rem; text-align: center; margin-bottom: 40px; }
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.product-card {
+    background: var(--white);
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    overflow: hidden;
+    position: relative;
+}
+
+.product-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.wishlist-icon {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: white;
+    padding: 8px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.card-body { padding: 20px; }
+.card-body h3 { margin: 0 0 10px 0; font-size: 1.2rem; }
+.rating { color: #FFD700; font-size: 0.8rem; margin-bottom: 10px; }
+.description { color: var(--text-light); font-size: 0.85rem; line-height: 1.4; }
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.price { color: var(--primary-color); font-weight: bold; font-size: 1.3rem; }
+
+.add-cart-btn {
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+/* Footer Styling */
+.footer {
+    background: #f4f7f9;
+    padding: 60px 5%;
+    margin-top: 50px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 2fr;
+    gap: 40px;
+}
+
+.subscribe-form {
+    display: flex;
+    margin-top: 15px;
+}
+
+.subscribe-form input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px 0 0 4px;
+    flex: 1;
+}
+
+.subscribe-form button {
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 0 4px 4px 0;
+}
